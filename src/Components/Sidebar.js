@@ -1,7 +1,8 @@
-import from SidebarItems from './SidebarItems';
+import SidebarItems from "./SidebarItems";
 
-const Sidebar=()=> {
+const Sidebar=()=>{
     return(
-        <div>
+        <div className="">  </div>
     )
 }
+export default Sidebar;
