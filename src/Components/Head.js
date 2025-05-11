@@ -1,15 +1,11 @@
-import SearchBox from "./SearchBox";
-import Usericon from "./Usericon";
-import Logo from "./Logo";
+import React from 'react';
 
+const Head = () => {
+  return (
+    <div>
+      <h1>This is Head Component</h1>
+    </div>
+  );
+};
 
-const Head=()=>{
-    return(
-        <div className="flex justify-between items-center bg-gray-200 p-2">
-            <Logo/>
-            <SearchBox/>
-            <Usericon/>
-        </div>
-    )
-}
 export default Head;

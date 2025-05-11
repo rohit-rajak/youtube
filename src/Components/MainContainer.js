@@ -1,3 +1,4 @@
+import React from 'react';
 import Cards from './Cards';
 import Sidebar from './Sidebar';
 import Button from './Button';
