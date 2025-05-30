@@ -1,17 +1,13 @@
-import React from 'react';
-import Cards from './Cards';
-import Sidebar from './Sidebar';
-import Button from './Button';
-const  MainContainer=() => {
+import InnerContainer from "./InnerContainer";
+import Sidebar from "./Sidebar";
 
-    return (
-        <div >
-            <span> MainContainer Component</span>
-            <Cards/>
+const MainContainer =()=>{
+    return(
+        <div className="flex">
             <Sidebar/>
-            <Button/>
-            
+            <InnerContainer/>
         </div>
     )
 }
+
 export default MainContainer;

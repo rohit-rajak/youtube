@@ -1,11 +1,18 @@
-import React from 'react';
+import Hamburger from "./Hamburger";
+import Logo from "./Logo";
+import SearchBox from "./SearchBox";
+import Usericon from "./Usericon";
 
-const Head = () => {
-  return (
-    <div>
-      <h1>This is Head Component</h1>
-    </div>
-  );
-};
+const Head =()=>{
+    return(
+        <div className="flex items-center">
+            
+            <Hamburger/>
+            <Logo/>
+            <SearchBox/>
+            <Usericon/>
+        </div>
+    )
+}
 
 export default Head;
