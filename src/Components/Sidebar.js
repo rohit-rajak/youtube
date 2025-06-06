@@ -1,4 +1,5 @@
 import SidebarItems from "./SidebarItems";
+import { Link } from "react-router-dom";
 
 const Sidebar =()=>{
     return(
@@ -6,13 +7,16 @@ const Sidebar =()=>{
             
             <ul>
                 <li>
-                    Home
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    Sports
+                    <Link to="/history">Hitory</Link>
                 </li>
                 <li>
-                    News
+                    <Link to="/watch">Watch</Link>
+                </li>
+                <li>
+                    <Link to="/demo">Demo</Link>
                 </li>
             </ul>
             <SidebarItems/>

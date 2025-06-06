@@ -3,7 +3,7 @@ import Button from "./Button";
 import Cards, { CardsHOC } from "./Cards";
 import { API_URI_YT } from "../Utils/Constant";
 import Shimmer from "./Shimmer";
-
+import { Link } from "react-router-dom";
 
 const InnerContainer =()=>{
     const [apiData,setApiData]=useState([]);
@@ -26,7 +26,9 @@ const InnerContainer =()=>{
                 {
                     apiData.map((items)=>{
                         return(
+                            <Link to={"/watch?v="+items.id}>
                             <Cards data={items} key={items.id}/> 
+                            </Link>
                         )
                     })
                 }
